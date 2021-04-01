@@ -11,6 +11,9 @@ Rails.application.configure do
   config.cache_classes = false
   config.action_view.cache_template_loading = true
 
+  routes.default_url_options[:host] = 'localhost:3000'
+
+
   # Do not eager load code on boot. This avoids loading your whole application
   # just for the purpose of running a single test. If you are using a tool that
   # preloads Rails for running tests, you may have to set it to true.
@@ -48,6 +51,7 @@ Rails.application.configure do
 
   # Raise exceptions for disallowed deprecations.
   config.active_support.disallowed_deprecation = :raise
+
 
   # Tell Active Support which deprecation messages to disallow.
   config.active_support.disallowed_deprecation_warnings = []

@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### USAGE
 
-Things you may want to cover:
+````
+git clone git@github.com:przemosk/event_reminder.git
 
-* Ruby version
+cd event_reminder
 
-* System dependencies
+bundle install
 
-* Configuration
+rails db:setup
 
-* Database creation
+rails s
+````
 
-* Database initialization
+### ENDPOINT
 
-* How to run the test suite
+Create Event Alert
+`POST http://localhost:3000/api/alerts/add_alert`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+````
+required params:
+   user_id: integer
+   event_id: integer
+   remaind_at: 02-04-2021 10:00
+````
