@@ -12,6 +12,9 @@ bundle install
 rails db:setup
 
 rails s
+
+in another terminal tab: redis-server ( redis required ) 
+in another terminal tab: bundle exec sidekiq
 ````
 
 ### ENDPOINT
