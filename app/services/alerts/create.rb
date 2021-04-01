@@ -20,7 +20,6 @@ module Alerts
 
     attr_reader :event_id, :user_id, :remind_at
 
-
     def calculate_remind_date
       Time.parse(remind_at.to_s)
     end
